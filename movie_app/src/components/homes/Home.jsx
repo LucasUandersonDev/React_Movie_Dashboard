@@ -1,9 +1,8 @@
-import React from "react";
-import { HomeCard } from "./HomeCard";
+import React from "react"
+import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import Slider from "react-slick"
-
+import HomeCard from "./HomeCard"
 
 const SampleNextArrow = (props) => {
   const { onClick } = props
@@ -25,7 +24,7 @@ const SamplePrevArrow = (props) => {
     </div>
   )
 }
-export const Home = ({ items }) => {
+const Home = ({ items }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -51,3 +50,5 @@ export const Home = ({ items }) => {
     </>
   )
 }
+
+export default Home

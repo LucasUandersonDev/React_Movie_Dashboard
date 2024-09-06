@@ -73,30 +73,29 @@
 .cast h4 span {
   color: #e50813;
 }
-.playButton {
+.palyButton {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.playButton .img{
+.palyButton .img {
   position: relative;
 }
-.change{
+.change {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-.playButton img{
+.palyButton img {
   width: 90px;
   height: 90px;
   margin-right: 20px;
-  transition: 0.5s;
 }
-.playButton button:hover .change {
+.palyButton button:hover .change {
   opacity: 1;
 }
-.playButton button {
+.palyButton button {
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -109,6 +108,34 @@
   letter-spacing: 2px;
   transition: 0.5s;
 }
-.margin {
+.mragin {
   margin-top: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .homeContainer h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .home {
+    position: relative;
+    margin: 0;
+    height: 60vh !important;
+  }
+  .coverImage img {
+    width: 100vw;
+    height: 70vh !important;
+  }
+  .home .content {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .home .row {
+    width: 100%;
+  }
+  .home .palyButton {
+    display: none;
+  }
+  .mragin {
+    margin-top: 0% !important;
+  }
 }
